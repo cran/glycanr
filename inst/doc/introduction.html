@@ -193,16 +193,19 @@ data from papers like
 <a href="http://pubs.acs.org/doi/abs/10.1021/acs.analchem.5b01463">Stöckmann et al.</a>.</p>
 
 <p>The package helps in calculating different quantities like derived traits
-and preparing the data for analysts wishing to do different statistical
+and preparing the data for analysts doing different statistical
 or computational modelling of the N-glycan data like in
 <a href="http://www.ncbi.nlm.nih.gov/pubmed/26200652">Vučković et al.</a>, <a href="http://www.ncbi.nlm.nih.gov/pubmed/24325898">Krištić et al</a> or
 <a href="http://jasn.asnjournals.org/content/early/2015/07/15/ASN.2015010109.full">Barrios et al.</a>.</p>
 
 <h2>Working with glycanr package</h2>
 
-<p>At the moment glycanr package consists of 8 functions (for general use).
-Functions  <strong><em>glyco.plot</em></strong> and <strong><em>glyco.outliers</em></strong> are handy
-functions to quickly explore the data. </p>
+<p>At the moment glycanr package consists of 12 functions 
+and 2 data sets.</p>
+
+<p>Functions  <strong><em>glyco.plot</em></strong> and <strong><em>glyco.outliers</em></strong> are handy
+functions to quickly explore the data. See the &ldquo;plots&rdquo; vignette
+for more information.</p>
 
 <p>Functions <strong><em>ildt</em></strong>, <strong><em>iudt</em></strong> and <strong><em>phdt</em></strong> return derived traits
 obtained from basic glycans. They have a standardised input
@@ -217,8 +220,10 @@ expected names can also be used if some glycans weren&#39;t measured.</p>
 <p>Functions <strong><em>ildt.translate</em></strong> and <strong><em>iudt.translate</em></strong> are
 useful to translate between computer friendly and human friendly names.</p>
 
-<p>Function <strong><em>tanorm</em></strong> is used normalize the data by
-Total Area Normalization.</p>
+<p>Functions <strong><em>mediannorm</em></strong>, <strong><em>medianquotientnorm</em></strong>, <strong><em>tanorm</em></strong>,
+<strong><em>refpeaknorm</em></strong> and <strong><em>quantilenorm</em></strong> are used to normalize the data
+with specific normalization techniques. See the &ldquo;normalization&rdquo; vignette
+for more info.</p>
 
 <p>Some functions have a default scheme for column names representing glycans
 (e.g. columns starting with &ldquo;GP&rdquo; present glycan data) and additional argument
