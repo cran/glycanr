@@ -29,15 +29,14 @@ and if the grouping argument is \code{TRUE} it should also have column: \cr
 }
 \examples{
 data(mpiu)
-mpiun <- quantilenorm(mpiu)
-head(mpiun)
+if(requireNamespace("preprocessCore", quietly=TRUE)){
+  mpiun <- quantilenorm(mpiu)
+  head(mpiun)
 
-# transpose (change) subjects and measurements
-mpiunt <- quantilenorm(mpiu, transpose=TRUE)
-head(mpiunt)
+  # transpose (change) subjects and measurements
+  mpiunt <- quantilenorm(mpiu, transpose=TRUE)
+  head(mpiunt)
 }
-\author{
-Ivo Ugrina, Lucija Klarić
 }
 \references{
 Bolstad, B. M., Irizarry R. A., Astrand, M, and Speed, T. P.: \cr
@@ -46,4 +45,6 @@ Array Data Based on Bias and Variance.\cr
 Bioinformatics 19(2), p. 185-193, 2003. \cr
 \url{http://dx.doi.org/10.1093/bioinformatics/19.2.185}
 }
-
+\author{
+Ivo Ugrina, Lucija Klarić
+}
